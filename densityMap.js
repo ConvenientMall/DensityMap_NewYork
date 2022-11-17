@@ -131,12 +131,12 @@ d3.csv("Population-Density By County.csv").then((pdd) => {
         svg.append("rect").attr("x", width - 670).attr("y", height - 100).attr("width", "40").attr("height", "20").style("fill", "floralwhite").style("stroke", "dimgray").on('click', white)
 
         function grey() {
-            d3.selectAll(".states").style("stroke", d3.color("black"));
+            d3.selectAll(".states").style("stroke-width", "1");
 
         }
 
         function white() {
-            d3.selectAll(".states").style("stroke", d3.color("white"));
+            d3.selectAll(".states").style("stroke-width", "0");
 
         }
 
